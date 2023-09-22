@@ -6,8 +6,13 @@ ifndef::imagesdir[:imagesdir: images]
 :experimental:
 :sectnums:
 :toc:
-ifdef::backend-html5[]
+:toclevels: 5
+:experimental:
 
+// https://mrhaki.blogspot.com/2014/06/awesome-asciidoc-use-link-attributes.html
+:linkattrs:
+
+ifdef::backend-html5[]
 // https://fontawesome.com/v4.7.0/icons/
 icon:file-text-o[link=https://github.com/2324-2ahitm-sew/2324-2ahitm-sew-lecture-notes/blob/main/asciidocs/{docname}.adoc] ‏ ‏ ‎
 icon:github-square[link=https://github.com/2324-2ahitm-sew/2324-2ahitm-sew-lecture-notes] ‏ ‏ ‎
@@ -15,3 +20,4 @@ icon:home[link=http://edufs.edu.htl-leonding.ac.at/~t.stuetz/hugo/2021/01/lectur
 endif::backend-html5[]
 
 == 2023-09-25
+
