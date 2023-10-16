@@ -435,6 +435,120 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+pre.rouge table td { padding: 5px; }
+pre.rouge table pre { margin: 0; }
+pre.rouge, pre.rouge .w {
+  color: #24292f;
+  background-color: #f6f8fa;
+}
+pre.rouge .k, pre.rouge .kd, pre.rouge .kn, pre.rouge .kp, pre.rouge .kr, pre.rouge .kt, pre.rouge .kv {
+  color: #cf222e;
+}
+pre.rouge .gr {
+  color: #f6f8fa;
+}
+pre.rouge .gd {
+  color: #82071e;
+  background-color: #ffebe9;
+}
+pre.rouge .nb {
+  color: #953800;
+}
+pre.rouge .nc {
+  color: #953800;
+}
+pre.rouge .no {
+  color: #953800;
+}
+pre.rouge .nn {
+  color: #953800;
+}
+pre.rouge .sr {
+  color: #116329;
+}
+pre.rouge .na {
+  color: #116329;
+}
+pre.rouge .nt {
+  color: #116329;
+}
+pre.rouge .gi {
+  color: #116329;
+  background-color: #dafbe1;
+}
+pre.rouge .kc {
+  color: #0550ae;
+}
+pre.rouge .l, pre.rouge .ld, pre.rouge .m, pre.rouge .mb, pre.rouge .mf, pre.rouge .mh, pre.rouge .mi, pre.rouge .il, pre.rouge .mo, pre.rouge .mx {
+  color: #0550ae;
+}
+pre.rouge .sb {
+  color: #0550ae;
+}
+pre.rouge .bp {
+  color: #0550ae;
+}
+pre.rouge .ne {
+  color: #0550ae;
+}
+pre.rouge .nl {
+  color: #0550ae;
+}
+pre.rouge .py {
+  color: #0550ae;
+}
+pre.rouge .nv, pre.rouge .vc, pre.rouge .vg, pre.rouge .vi, pre.rouge .vm {
+  color: #0550ae;
+}
+pre.rouge .o, pre.rouge .ow {
+  color: #0550ae;
+}
+pre.rouge .gh {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .gu {
+  color: #0550ae;
+  font-weight: bold;
+}
+pre.rouge .s, pre.rouge .sa, pre.rouge .sc, pre.rouge .dl, pre.rouge .sd, pre.rouge .s2, pre.rouge .se, pre.rouge .sh, pre.rouge .sx, pre.rouge .s1, pre.rouge .ss {
+  color: #0a3069;
+}
+pre.rouge .nd {
+  color: #8250df;
+}
+pre.rouge .nf, pre.rouge .fm {
+  color: #8250df;
+}
+pre.rouge .err {
+  color: #f6f8fa;
+  background-color: #82071e;
+}
+pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cm, pre.rouge .cp, pre.rouge .cpf, pre.rouge .c1, pre.rouge .cs {
+  color: #6e7781;
+}
+pre.rouge .gl {
+  color: #6e7781;
+}
+pre.rouge .gt {
+  color: #6e7781;
+}
+pre.rouge .ni {
+  color: #24292f;
+}
+pre.rouge .si {
+  color: #24292f;
+}
+pre.rouge .ge {
+  color: #24292f;
+  font-style: italic;
+}
+pre.rouge .gs {
+  color: #24292f;
+  font-weight: bold;
+}
+</style>
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -448,7 +562,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_2023_09_25">1. 2023-09-25</a></li>
+<li><a href="#_2023_10_09">1. 2023-10-09</a>
+<ul class="sectlevel2">
+<li><a href="#_konstruktoren">1.1. Konstruktoren</a></li>
+</ul>
+</li>
+<li><a href="#_2023_10_16">2. 2023-10-16</a></li>
 </ul>
 </div>
 </div>
@@ -463,16 +582,92 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2023_09_25"><a class="anchor" href="#_2023_09_25"></a>1. 2023-09-25</h2>
+<h2 id="_2023_10_09"><a class="anchor" href="#_2023_10_09"></a>1. 2023-10-09</h2>
 <div class="sectionbody">
-
+<div class="sect2">
+<h3 id="_konstruktoren"><a class="anchor" href="#_konstruktoren"></a>1.1. Konstruktoren</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Dienen dazu Speicherplatz für die Objekte am Heap zu allokieren (reservieren)</p>
+</li>
+<li>
+<p>Ein Konstruktor hat den selben Namen wie die Klasse und <strong>keinen</strong> Rückgabewert</p>
+</li>
+<li>
+<p>Obwohl ein Konstruktor eine Methode ist, wird er mit großen Anfangsbuchstaben geschrieben.</p>
+</li>
+<li>
+<p>Sie können Eingangsparameter haben, damit die Objektvariablen initialisiert werden</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Deklaration &#8594; Einer Variable einen Datentyp und eine Bezeichnung zuweisen, zB int a;
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Initialisierung &#8594; Einer Variablen erstmalig einen Wert zuweisen
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2023_10_16"><a class="anchor" href="#_2023_10_16"></a>2. 2023-10-16</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="images/klassen-vs-objekte.png" alt="klassen vs objekte">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/beziehungen-zwischen-objekten.png" alt="beziehungen zwischen objekten">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/figuren-cld.svg" alt="figuren cld" width="309" height="284">
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="nc">Dreieck</span><span class="o">[]</span> <span class="n">d</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dreieck</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span>
+<span class="nc">Figur</span><span class="o">[]</span> <span class="n">figuren</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Figur</span><span class="o">[</span><span class="mi">10</span><span class="o">];</span>
+<span class="n">figuren</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Dreieck</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span><span class="mi">40</span><span class="o">,</span><span class="mi">45</span><span class="o">);</span></code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>@Override</code> ist ein Marker, der sicherrstellt, dass auch eine (die korrekte) Methode überschrieben wird.</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2023-09-23 09:52:56 UTC
+Last updated 2023-10-16 10:25:20 UTC
 </div>
 </div>
 </body>
