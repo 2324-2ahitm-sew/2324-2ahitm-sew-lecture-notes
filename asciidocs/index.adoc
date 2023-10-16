@@ -19,7 +19,64 @@ icon:github-square[link=https://github.com/2324-2ahitm-sew/2324-2ahitm-sew-lectu
 icon:home[link=http://edufs.edu.htl-leonding.ac.at/~t.stuetz/hugo/2021/01/lecture-notes/]
 endif::backend-html5[]
 
-== 2023-09-25
+== 2023-10-09
+
+=== Konstruktoren
+
+* Dienen dazu Speicherplatz für die Objekte am Heap zu allokieren (reservieren)
+* Ein Konstruktor hat den selben Namen wie die Klasse und *keinen* Rückgabewert
+* Obwohl ein Konstruktor eine Methode ist, wird er mit großen Anfangsbuchstaben geschrieben.
+* Sie können Eingangsparameter haben, damit die Objektvariablen initialisiert werden
 
 
+NOTE: Deklaration -> Einer Variable einen Datentyp und eine Bezeichnung zuweisen, zB int a;
+
+NOTE: Initialisierung -> Einer Variablen erstmalig einen Wert zuweisen
+
+
+
+
+== 2023-10-16
+
+image::klassen-vs-objekte.png[]
+
+image::beziehungen-zwischen-objekten.png[]
+
+[plantuml,figuren-cld,svg]
+----
+@startuml
+abstract class Figur {
+  {abstract} area()
+  {abstract} circumference()
+}
+
+class Dreieck {
+ -seite1 : double
+ -seite2: double
+ -winkel: double
+  area()
+  circumference()
+}
+
+class Rechteck {
+  -breite: double
+  -laenge: double
+  area()
+  circumference()
+}
+
+Figur <|-- Dreieck
+Figur <|-- Rechteck
+@enduml
+----
+
+[source,java]
+----
+Dreieck[] d = new Dreieck[10];
+Figur[] figuren = new Figur[10];
+figuren[0] = new Dreieck(10,40,45);
+----
+
+
+* `@Override` ist ein Marker, der sicherrstellt, dass auch eine (die korrekte) Methode überschrieben wird.
 
