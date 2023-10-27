@@ -116,7 +116,7 @@ figuren[0] = new Dreieck(10,40,45);
 cd America/USA/NewYork  # <.>
 cd ../Boston # <.>
 ----
-
++
 <.> Das ist ein relativer Pfad
 <.> Das ist ebenfalls ein relativer Pfad
 
