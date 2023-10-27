@@ -80,3 +80,78 @@ figuren[0] = new Dreieck(10,40,45);
 
 * `@Override` ist ein Marker, der sicherrstellt, dass auch eine (die korrekte) Methode überschrieben wird.
 
+
+== 2023-10-23
+
+=== absoluter vs relativer Pfad
+
+* relativer Pfad
+** ausgehend vom aktuellem Verzeichnis
++
+[plantuml,tree]
+----
+@startsalt
+{
+{T
+ + /
+ ++ America
+ +++ Canada
+ +++ USA
+ ++++ NewYork
+ ++++ Boston
+ +++ Mexico
+ ++ Europe
+ +++ Italy
+ +++ Germany
+ ++++ Berlin
+ ++ Africa
+}
+}
+@endsalt
+----
++
+.Wir befinden uns am Anfang im Root
+[source,shell]
+----
+cd America/USA/NewYork  # <.>
+cd ../Boston # <.>
+----
+
+<.> Das ist ein relativer Pfad
+<.> Das ist ebenfalls ein relativer Pfad
+
+* absoluter Pfad
+
+[source,shell]
+----
+cd /Europe/Germany/Berlin # <.>
+----
+
+<.> Das ist ein absoluter Pfad. Dieser beginnt immer im Wurzelverzeichnis (root)
+
+IMPORTANT: Man erkennt einen absoluten Pfad daran, dass er immer mit einem `/` beginnt (unter Windows mit `\` oder `C:\`)
+
+=== Ausnahmebehandlung (Exceptions)
+
+* https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/
+
+image::https://media.geeksforgeeks.org/wp-content/uploads/Exception-in-java1.png[]
+
+* Checked Exceptions müssen behandelt werden:
+** Weitergabe in Methodensignatur
+** Behandlung im try-catch-Block
+
+=== try-with-resource
+
+* The try -with-resources statement is a try statement that declares one or more resources. A resource is an object that must be closed after the program is finished with it. The try -with-resources statement ensures that each resource is closed at the end of the statement.
+
+[source,java]
+----
+try (Scanner scanner = new Scanner(new FileReader(FILE_NAME))) {
+
+    // ...
+
+} catch (FileNotFoundException e) {
+    throw new RuntimeException(e);
+}
+----

@@ -1,0 +1,2 @@
+In den Ferien macht %1 mal Pause.
+Während der Schulzeit lernt %1.

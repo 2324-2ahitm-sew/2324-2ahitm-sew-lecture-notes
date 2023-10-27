@@ -1,0 +1,89 @@
+= Übung Person
+Thomas Stütz
+1.0.0, {docdate}
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+// :toc:
+// :toclevels: 1
+:experimental:
+//https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74?permalink_comment_id=3948218
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+[discrete]
+== Themenschwerpunkte
+* Klassen und Instanzen
+* Konstruktoren
+* Methoden
+
+== Aufgabenstellung
+
+=== Erstellen einer Klasse `Person`
+
+* Erstellen Sie eine Klasse `Person` mit folgenden *Eigenschaften*:
+** Vorname (firstname)
+** Nachname (surname)
+** Geburtsdatum (Jahr, Monat, Tag)
+** PLZ
+** Ort
+** Geschlecht (Enumeration MALE, FEMALE, OTHER, PREFER_NOT_TO_SAY)
+
+
+* Erstellen Sie folgende *Konstruktoren*:
+** einen Standardkonstruktor (Default-Konstruktor)
+** einen Konstruktor, der alle genannten Attribute entgegennimmt
+** einen Konstruktor, nur für Vor- und Nachname
+
+* Erstellen Sie folgende *Methoden*:
+
+[%autowidth, cols="m,d"]
+|===
+|Methodenname |Funktion
+
+| age()
+a| Geben sie das Alter für das aktuelle Datum zurück.
+
+Das aktuelle Datum erhalten Sie mit
+
+[source,java]
+----
+LocalDate now = LocalDate.now();
+int year = now.getYear();
+int month = now.getMonthValue();
+int day = now.getDayOfMonth();
+----
+
+| age(year, month, day)
+|Geben Sie das Alter für das übergebene Datum zurück
+
+|toString()
+|Ausgabe: `Max Mustermann, wohnhaft in 4060 Leonding, geboren am 25. September 2000`
+
+|getDate()
+|Rückgabe eines Strings zB 2023-09-04
+
+|===
+
+TIP: Vermeiden Sie Codeverdopplung
+
+== Erstellen der Instanzen für 4 Personen
+
+* Diese Personen heißen Mimi, Susi, Hansi und Maxi.
+* Geben Sie die Daten dieser Personen auf der Console aus. Welche Möglichkeiten gibt es hierfür?
+
+
+
+----
+____   ____.__       .__      _________                          ._.
+\   \ /   /|__| ____ |  |    /   _____/__________    ______ _____| |
+ \   Y   / |  |/ __ \|  |    \_____  \\____ \__  \  /  ___//  ___/ |
+  \     /  |  \  ___/|  |__  /        \  |_> > __ \_\___ \ \___ \ \|
+   \___/   |__|\___  >____/ /_______  /   __(____  /____  >____  >__
+                   \/               \/|__|       \/     \/     \/ \/
+----

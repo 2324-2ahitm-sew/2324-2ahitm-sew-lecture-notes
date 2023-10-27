@@ -1,0 +1,87 @@
+= Übung Placeholder
+Thomas Stütz
+1.0.0, {docdate}
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+// :toc:
+// :toclevels: 1
+:experimental:
+//https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74?permalink_comment_id=3948218
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+[discrete]
+== Themenschwerpunkte
+* Klassen und Instanzen
+* Lesen und schreiben von Textfiles
+
+== Ausgangssituation
+
+* Sie haben zwei Dateien:
+
+.template.txt
+[source, text]
+----
+In den Ferien macht %1 mal Pause.
+Während der Schulzeit lernt %1.
+----
+
+.names.txt
+[source, csv]
+----
+Anton
+Berta
+Cäsar
+...
+----
+
+== Aufgabenstellung
+
+* Erstellen Sie ein Programm dass die Namen von `names.txt` in den Platzhalter `%1` der Datei `template.txt` einsetzt.
+
+* Das Ergebnis soll in eine Datei `result.txt` geschrieben werden:
++
+.result.txt
+[source,text]
+----
+In den Ferien macht Anton mal Pause.
+In den Ferien macht Berta mal Pause.
+In den Ferien macht Cäsar mal Pause.
+...
+Während der Schulzeit lernt Anton.
+Während der Schulzeit lernt Berta.
+Während der Schulzeit lernt Cäsar.
+...
+----
+
+== Ablauf
+
+* Es ist dabei wie folgt vozugehen
++
+image::http://www.plantuml.com/plantuml/png/NOv13i8m30JlVeNLUta2wbSiOaga94NEHl1yL4UGqjlkP1JlKY66bXCblOEniSNr0GxHz8Qu5Q8zI5cJiga4Q7ucWR9KddR0NtB16zF9BfAr3jNhsOkbgY48nCLUkthKNXQXfhKbkEUTE-XVqj--URwE2VHBpiT96j5V3bU85YsXvVG1[]
+
+. Zunächst wird das Template in ein String-Array `template` eingelesen
+. Anschließend werden die Namen in ein weiteres String-Array `names` eingelesen.
+. Schließlich werden die Namen in das Template eingesetzt und in ein drittes String-Array 'result' gespeichert
+. Das Array `result` wird nun in eine Datei `result.txt` geschrieben.
+
+IMPORTANT: Erstellen Sie eine Methode `countLines(...)`, die die Zeilen einer Datei ermittelt, um das String-Array korrekt dimensionieren zu können.
+
+== Tests
+
+* Es stehen Unit-Tests zur Verfügung.
+
+----
+____   ____.__       .__      _________                          ._.
+\   \ /   /|__| ____ |  |    /   _____/__________    ______ _____| |
+ \   Y   / |  |/ __ \|  |    \_____  \\____ \__  \  /  ___//  ___/ |
+  \     /  |  \  ___/|  |__  /        \  |_> > __ \_\___ \ \___ \ \|
+   \___/   |__|\___  >____/ /_______  /   __(____  /____  >____  >__
+                   \/               \/|__|       \/     \/     \/ \/
+----
