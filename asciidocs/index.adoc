@@ -123,12 +123,12 @@ cd ../Boston # <.>
 //--
 
 * absoluter Pfad
-
++
 [source,shell]
 ----
 cd /Europe/Germany/Berlin # <.>
 ----
-
++
 <.> Das ist ein absoluter Pfad. Dieser beginnt immer im Wurzelverzeichnis (root)
 
 IMPORTANT: Man erkennt einen absoluten Pfad daran, dass er immer mit einem `/` beginnt (unter Windows mit `\` oder `C:\`)
