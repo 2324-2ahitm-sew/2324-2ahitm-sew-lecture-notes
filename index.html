@@ -568,6 +568,13 @@ pre.rouge .gs {
 </ul>
 </li>
 <li><a href="#_2023_10_16">2. 2023-10-16</a></li>
+<li><a href="#_2023_10_23">3. 2023-10-23</a>
+<ul class="sectlevel2">
+<li><a href="#_absoluter_vs_relativer_pfad">3.1. absoluter vs relativer Pfad</a></li>
+<li><a href="#_ausnahmebehandlung_exceptions">3.2. Ausnahmebehandlung (Exceptions)</a></li>
+<li><a href="#_try_with_resource">3.3. try-with-resource</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -663,11 +670,142 @@ Initialisierung &#8594; Einer Variablen erstmalig einen Wert zuweisen
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2023_10_23"><a class="anchor" href="#_2023_10_23"></a>3. 2023-10-23</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_absoluter_vs_relativer_pfad"><a class="anchor" href="#_absoluter_vs_relativer_pfad"></a>3.1. absoluter vs relativer Pfad</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>relativer Pfad</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ausgehend vom aktuellem Verzeichnis</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/tree.png" alt="tree" width="105" height="178">
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Wir befinden uns am Anfang im Root</div>
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell"><span class="nb">cd </span>America/USA/NewYork  <i class="conum" data-value="1"></i><b>(1)</b>
+<span class="nb">cd</span> ../Boston <i class="conum" data-value="2"></i><b>(2)</b></code></pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Das ist ein relativer Pfad</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td>Das ist ebenfalls ein relativer Pfad
+<div class="ulist">
+<ul>
+<li>
+<p>absoluter Pfad</p>
+</li>
+</ul>
+</div></td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="shell"><span class="nb">cd</span> /Europe/Germany/Berlin <i class="conum" data-value="1"></i><b>(1)</b></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Das ist ein absoluter Pfad. Dieser beginnt immer im Wurzelverzeichnis (root)</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Man erkennt einen absoluten Pfad daran, dass er immer mit einem <code>/</code> beginnt (unter Windows mit <code>\</code> oder <code>C:\</code>)
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ausnahmebehandlung_exceptions"><a class="anchor" href="#_ausnahmebehandlung_exceptions"></a>3.2. Ausnahmebehandlung (Exceptions)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/" class="bare">https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/</a></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/Exception-in-java1.png" alt="Exception in java1">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Checked Exceptions müssen behandelt werden:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Weitergabe in Methodensignatur</p>
+</li>
+<li>
+<p>Behandlung im try-catch-Block</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_try_with_resource"><a class="anchor" href="#_try_with_resource"></a>3.3. try-with-resource</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>The try -with-resources statement is a try statement that declares one or more resources. A resource is an object that must be closed after the program is finished with it. The try -with-resources statement ensures that each resource is closed at the end of the statement.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="java"><span class="k">try</span> <span class="o">(</span><span class="nc">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Scanner</span><span class="o">(</span><span class="k">new</span> <span class="nc">FileReader</span><span class="o">(</span><span class="no">FILE_NAME</span><span class="o">)))</span> <span class="o">{</span>
+
+    <span class="c1">// ...</span>
+
+<span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="nc">FileNotFoundException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">e</span><span class="o">);</span>
+<span class="o">}</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2023-10-16 10:25:20 UTC
+Last updated 2023-10-27 09:34:54 UTC
 </div>
 </div>
 </body>
