@@ -120,6 +120,8 @@ cd ../Boston # <.>
 <.> Das ist ein relativer Pfad
 <.> Das ist ebenfalls ein relativer Pfad
 
+//--
+
 * absoluter Pfad
 
 [source,shell]
