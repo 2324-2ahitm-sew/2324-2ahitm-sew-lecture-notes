@@ -157,3 +157,22 @@ try (Scanner scanner = new Scanner(new FileReader(FILE_NAME))) {
     throw new RuntimeException(e);
 }
 ----
+
+== 2023-11-13
+
+[plantuml,vererbung]
+----
+@startuml
+class Object {
+}
+
+class Point extends Object {
+  x: int
+  y: int
+  getX()
+}
+@enduml
+----
+
+image::equals.png[]
+
