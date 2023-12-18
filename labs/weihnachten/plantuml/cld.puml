@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+
+
+class GiftManager {
+    -persons: Person[]
+    -noOfPersons: int
+    +addPerson(person: Person): boolean
+    +getPersons(): Person[]
+    +printGiftList(): void
+}
+
+class Person {
+    -MAX_WISHES: int <<final>>
+    -noOfWishes: int
+    -name: String
+    -wishList: Wish[]
+    +Person(name: String, dob: LocalDate)
+    +addWish(wish: Wish): boolean
+    +removeWish(wish: Wish): boolean
+    +equals(object: Object): boolean
+    +hashCode(): int
+    +toString(): String
+}
+
+class Wish {
+    -name: String
+    -price: BigDecimal
+    +Wish(name: String, price: BigDecimal)
+    +equals(object: Object): boolean
+    +hashCode(): int
+    +toString(): String
+}
+
+Person "1" --> "0..*" Wish
+GiftManager "1" --> "0..*" Person
+
+@enduml

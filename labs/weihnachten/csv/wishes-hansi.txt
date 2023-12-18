@@ -1,0 +1,3 @@
+Fussball;25
+Modelleisenbahn;120
+Raspberry Pi;130

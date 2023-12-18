@@ -1,0 +1,99 @@
+= Übung Weihnachtsgeschenke
+Thomas Stütz
+1.0.0, {docdate}
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
+:sectnums:    // Nummerierung der Überschriften / section numbering
+// :toc:
+// :toclevels: 1
+:experimental:
+//https://gist.github.com/dcode/0cfbf2699a1fe9b46ff04c41721dda74?permalink_comment_id=3948218
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+[discrete]
+== Themenschwerpunkte
+* Klassen und Instanzen
+* Beziehungen zwischen Klassen
+* Automatisiertes Testen
+
+== Ausgangssituation
+
+* Sie sind das Helferlein für das Christkind.
+* Sie sollen ein Programm schreiben, das die Wünsche der Kinder verwaltet.
+* Die Wünsche der einzelnen Kinder sind in jeweils in
+einer Datei gespeichert. zB:
+** wishes-susi.txt
+** wishes-hansi.txt
+** wishes-mimi.txt
+** wishes-franzi.txt
+
+* Die Wünsche sind in der Datei zeilenweise gespeichert.
+* Die Wünsche können unterschiedliche Preise haben
+
+== Klassendiagramm
+
+* Jede Person kann mehrere Wünsche haben.
+* Jeder Wunsch hat einen Preis.
+* Wünsche dürfen nicht doppelt sein, dh man kann sich nicht zB zwei Modelleisenbahnen wüschen.
+* Ein Wunsch ist gleich mit einem anderen, wenn der Name ident ist. Der Preis spielt *keine* Rolle.
+* Im GiftManager werden die einzelnen Personen in einem Array mit max. 100 Personen verwaltet.
+* Der Giftmanager kann alle Wünsche aller Personen ausgeben.
+
+// [plantuml,cld,png]
+// ----
+// include::plantuml/cld.puml[]
+// ----
+
+image::cld.png[]
+
+
+== Objektdiagramm
+
+image::objectdiagramm.png[]
+
+
+== Aufgabenstellung
+
+* Erstellen Sie obige Klassen und testen Sie diese ausführlich.
+* Erstellen Sie eine Klasse Main, die die csv-Dateien einliest und die Wünsche in den GiftManager einträgt.
+* Schließlich wird eine Liste aller anzuschaffenden Geschenke ausgegeben, mit ihren Einzelpreisen sowie dem Gesamtpreis
+
+----
+Susi
+Wingsuit          2.500,00 €
+Playstation 17      750,00 €
+
+Mimi
+Wingsuit          3.000,00 €
+Modelleisenbahn     120,00 €
+T-Shirt              20,00 €
+
+Hansi
+Fussball             25,00 €
+Modelleisenbahn     120,00 €
+Raspberry Pi        130,00 €
+
+Franzi
+Wingsuit          3.000,00 €
+Raspberry Pi        120,00 €
+-----------------------------
+Total:            9.785,00 €
+----
+
+* Achten Sie auf die Formatierung der Ausgabe (Spaltenbreite)
+* Die Namen sollen mit einem Großbuchstaben beginnen.
+
+----
+____   ____.__       .__      _________                          ._.
+\   \ /   /|__| ____ |  |    /   _____/__________    ______ _____| |
+ \   Y   / |  |/ __ \|  |    \_____  \\____ \__  \  /  ___//  ___/ |
+  \     /  |  \  ___/|  |__  /        \  |_> > __ \_\___ \ \___ \ \|
+   \___/   |__|\___  >____/ /_______  /   __(____  /____  >____  >__
+                   \/               \/|__|       \/     \/     \/ \/
+----

@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+
+file "wishes-hansi.txt" as wishesHansi
+file "wishes-susi.txt" as wishesSusi
+file "wishes-franzi.txt" as wishesFranzi
+file "wishes-mimi.txt" as wishesMimi
+
+rectangle "import wishes" as importWishes
+rectangle "store wishes to persons" as storeWishes
+rectangle "print on screen" as printWishes
+
+wishesHansi --> importWishes
+wishesSusi --> importWishes
+wishesFranzi --> importWishes
+wishesMimi --> importWishes
+
+importWishes --> storeWishes
+storeWishes --> printWishes
+
+@enduml
