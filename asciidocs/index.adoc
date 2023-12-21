@@ -83,6 +83,11 @@ figuren[0] = new Dreieck(10,40,45);
 
 == 2023-10-23
 
+=== Kompilieren in Java
+
+image::compile-in-java.jpeg[]
+
+
 === absoluter vs relativer Pfad
 
 * relativer Pfad
@@ -181,4 +186,14 @@ image::equals.png[]
 === System Properties
 
 * https://howtodoinjava.com/java/basics/java-system-properties/
+
+== 2023-12-21
+
+=== Stack vs Queue
+
+image::stack-vs-queue.jpg[]
+
+=== (Einfach) verkettete Liste
+
+image::verkettete-liste.jpg[]
 
