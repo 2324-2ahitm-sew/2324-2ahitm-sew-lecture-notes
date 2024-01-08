@@ -197,3 +197,69 @@ image::stack-vs-queue.jpg[]
 
 image::verkettete-liste.jpg[]
 
+== 2024-01-08
+
+=== Boxing & Unboxing
+
+* Boxing: Vom Primitivdatentyp zum Objektdatentyp
+** z.B. int -> Integer
+
+* Unboxing: Vom Objektdatentyp zum Primitivdatentyp
+** z.B. Integer -> int
+
+=== Wrapping
+
+* Der Primitivdatentyp wird in einer Klasse eingepackt.
+
+=== Einfachvererbung & Mehrfachvererbung
+
+IMPORTANT: Mehrfachvererbung in Java nicht möglich!
+
+* Einfachvererbung wird allerdings schon in Java verwendet.
+* z.B.
+
+[plantuml,einfach- und mehrfachvererbung]
+----
+@startuml
+class Object {
+}
+
+class Vehicle extends Object{
+}
+
+class Car extends Vehicle{
+}
+
+class Truck extends Vehicle{
+}
+
+interface Swim{
+  swim()
+}
+
+Swim <|.. Car
+
+
+@enduml
+----
+
+=== FiFo & LiFo
+
+* Beim FiFo- Speicher wird ein Element als erstes eingefügt, dieses Verlässt den Speicher allerdings
+auch als erstes (First- In, First- Out).
+
+* Beim LiFo wird das zuletzt zugefügte Element als
+erstes beim Speicher wieder entfernt(Last- In, First- Out).
+
+
+
+
+
+
+
+
+
+
+
+
+
