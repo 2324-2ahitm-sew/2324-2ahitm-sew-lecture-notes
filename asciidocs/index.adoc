@@ -271,15 +271,13 @@ Erstes beim Speicher wieder entfernt (Last- In, First- Out).
 *** Berechnen des Gesamtgewichts
 *** Ermitteln des schwersten und leichtesten Wagons.
 *** Ermitteln des durchschnittlichen Gewichts der einzelnen Wagons.
+*** Wieviele Wagons hat der Zug?
+*** Welche Wagons sind leer?
 +
 image::package-train-container.png[]
 +
 image::train-mit-container.png[]
 
-*** Ermitteln Sie das Gesamtgewicht
-*** Wieviele Wagons hat der Zug?
-*** Welche Wagons sind leer?
-*** Durchschnittsgewicht pro Wagon
 
 
 
