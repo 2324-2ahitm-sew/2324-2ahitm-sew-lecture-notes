@@ -276,6 +276,10 @@ image::package-train-container.png[]
 +
 image::train-mit-container.png[]
 
+*** Ermitteln Sie das Gesamtgewicht
+*** Wieviele Wagons hat der Zug?
+*** Welche Wagons sind leer?
+*** Durchschnittsgewicht pro Wagon
 
 
 
