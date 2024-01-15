@@ -271,9 +271,10 @@ Erstes beim Speicher wieder entfernt (Last- In, First- Out).
 *** Berechnen des Gesamtgewichts
 *** Ermitteln des schwersten und leichtesten Wagons.
 *** Ermitteln des durchschnittlichen Gewichts der einzelnen Wagons.
-
++
 image::package-train-container.png[]
-
++
+image::train-mit-container.png[]
 
 
 
