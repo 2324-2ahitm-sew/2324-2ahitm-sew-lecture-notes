@@ -245,13 +245,32 @@ Swim <|.. Car
 
 === FiFo & LiFo
 
-* Beim FiFo- Speicher wird ein Element als erstes eingefügt, dieses Verlässt den Speicher allerdings
-auch als erstes (First- In, First- Out).
+* Beim FiFo-Speicher wird ein Element als erstes eingefügt, dieses Verlässt den Speicher allerdings
+auch als erstes (First-In, First-Out).
 
 * Beim LiFo wird das zuletzt zugefügte Element als
-erstes beim Speicher wieder entfernt(Last- In, First- Out).
+Erstes beim Speicher wieder entfernt (Last- In, First- Out).
 
 
+== 2024-01-15
+
+=== Tipps für den Test
+
+* Lesen und Schreiben von Files
+* Ev. einfach verkettete Liste
+
+** Mögliche Operationen:
+
+*** Einfügen vorne und hinten und an bestimmten Positionen
+*** Entnehmen (Löschen) von Elementen der Liste (vorne, hinten, nach Position)
+*** Zugriff auf einzelne Elemente der Liste
+*** Durchlaufen aller Elemente
+
+** Erweiterung von Zug-Beispiel
+*** Anstelle der Wrapper-Klassen eigene Klassen / Objekte verwenden: zB Produkte (mit Gewicht, Anzahl)
+*** Berechnen des Gesamtgewichts
+*** Ermitteln des schwersten und leichtesten Wagons.
+*** Ermitteln des durchschnittlichen Gewichts der einzelnen Wagons.
 
 
 
