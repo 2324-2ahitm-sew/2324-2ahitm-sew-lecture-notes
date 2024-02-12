@@ -279,8 +279,32 @@ image::package-train-container.png[]
 image::train-mit-container.png[]
 
 
+== 2024-02-12
 
+=== Übung
 
+* Bsp 001: Erstellen Sie eine Klasse Person, sowie eine Klasse `PersonenSortierer`
+
+** Mit einem Menü kann man auswählen wie die Liste sortiert wird
++
+----
+1 ... Person eingeben
+2 ... Liste nach Nachnamen / Vornamen sortiert ausgeben
+3 ... Liste nach Alter absteigend ausgeben
+4 ... Liste nach Größe aufsteigend ausgeben
+0 ... Programm beenden
+----
++
+[plantuml,sortieren-person-cld,svg]
+----
+include::plantuml/sortieren-cld-person.puml[]
+----
+
+** Verwenden Sie als natürliche Sortierung Nachnamen und als zweites Kriterium den Vornamen
+
+** Für die anderen Sortierkriterien verwenden Sie das Comparator Interface
+
+** Beginnen Sie mit einfachen Unit-Tests um die Funktionalität zu prüfen
 
 
 
