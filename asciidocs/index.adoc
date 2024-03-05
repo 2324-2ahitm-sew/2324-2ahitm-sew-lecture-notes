@@ -307,6 +307,22 @@ include::plantuml/sortieren-cld-person.puml[]
 ** Beginnen Sie mit einfachen Unit-Tests um die Funktionalität zu prüfen
 
 
+== 2024-03-04
 
+=== Sorts
 
+==== Grundsortierung
+==== Insertion Sort
+==== Selection Sort
+==== Bubble Sort
+
+* In-Place
+
+==== O-Notation
+
+* Zeitkomplexität !
+* Platzkomplexität:
+Diese gibt an, wie viel zusätzlichen Speicherplatz der Algorithmus in Abhängigkeit von der Anzahl der zu sortierenden Elemente benötigt. Damit ist nicht der Speicherplatz gemeint, der für die zu sortierenden Elemente selbst benötigt wird, sondern darüberhinaus benötigter Platz für z. B. Hilfsvariablen, Schleifenzähler und temporäre Arrays.
+
+* stabile und nicht-stabile Sortierverfahren
 
