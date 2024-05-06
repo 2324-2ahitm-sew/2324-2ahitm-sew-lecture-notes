@@ -326,3 +326,41 @@ Diese gibt an, wie viel zusätzlichen Speicherplatz der Algorithmus in Abhängig
 
 * stabile und nicht-stabile Sortierverfahren
 
+== 2024-05-06
+
+=== statische Elemente in einer Klasse
+
+* Verbesserung der 3.LF-W
+
+* Hausübung
+** Die gesamte 3.LF ist zu verbessern
+** Die einzelnen Korrekturen sind in einer Datei VERBESSERUNG.adoc zu dokumentieren. Diese Datei ist im Repo-Root
+** Invite-Link: https://classroom.github.com/a/UZoZayof
+** Besonders wichtig ist die (Neu-)Implementierung von Aufgabe 3
+
+
+=== Unit-Tests mit assertj-core
+
+=== Generics
+
+=== Autoboxing
+
+* In Java gibt es Primitivdatentypen zB int -> int zahl = 3;
+
+* Es gibt aber auch Objekttypen wie zB Integer
+
+* Man betrachtet diese Objekttypen als Schachtel (Box), in der die Primitivdatentypen verpackt werden.
++
+zB *Integer zahl = 3;*
++
+Hier wir nicht nur ein Wert erstellt, sondern ein ganzes Integer-Objekt (mit allen Methoden usw) in der der Wert 3 eingepackt wurde. Dies geschieht automatisch, daher autoboxing
+
+* Früher musste man das händisch durchführen.
++
+[.line-through]#Integer zahl = new Integer(3);#
+
+** Boxing: int -> Integer
+** Unboxing: Integer -> int
+
+
+
