@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.21">
+<meta name="generator" content="Asciidoctor 2.0.22">
 <meta name="author" content="Thomas W. Stütz">
 <link rel="icon" type="image/png" href="themes/favicon.png">
 <title>23/24 2ahitm sew - Lecture Notes</title>
@@ -612,6 +612,14 @@ pre.rouge .gs {
 <li><a href="#_sorts">10.1. Sorts</a></li>
 </ul>
 </li>
+<li><a href="#_2024_05_06">11. 2024-05-06</a>
+<ul class="sectlevel2">
+<li><a href="#_statische_elemente_in_einer_klasse">11.1. statische Elemente in einer Klasse</a></li>
+<li><a href="#_unit_tests_mit_assertj_core">11.2. Unit-Tests mit assertj-core</a></li>
+<li><a href="#_generics">11.3. Generics</a></li>
+<li><a href="#_autoboxing">11.4. Autoboxing</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -1152,11 +1160,91 @@ Diese gibt an, wie viel zusätzlichen Speicherplatz der Algorithmus in Abhängig
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2024_05_06"><a class="anchor" href="#_2024_05_06"></a>11. 2024-05-06</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_statische_elemente_in_einer_klasse"><a class="anchor" href="#_statische_elemente_in_einer_klasse"></a>11.1. statische Elemente in einer Klasse</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Verbesserung der 3.LF-W</p>
+</li>
+<li>
+<p>Hausübung</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Die gesamte 3.LF ist zu verbessern</p>
+</li>
+<li>
+<p>Die einzelnen Korrekturen sind in einer Datei VERBESSERUNG.adoc zu dokumentieren. Diese Datei ist im Repo-Root</p>
+</li>
+<li>
+<p>Invite-Link: <a href="https://classroom.github.com/a/UZoZayof" class="bare">https://classroom.github.com/a/UZoZayof</a></p>
+</li>
+<li>
+<p>Besonders wichtig ist die (Neu-)Implementierung von Aufgabe 3</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_unit_tests_mit_assertj_core"><a class="anchor" href="#_unit_tests_mit_assertj_core"></a>11.2. Unit-Tests mit assertj-core</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_generics"><a class="anchor" href="#_generics"></a>11.3. Generics</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_autoboxing"><a class="anchor" href="#_autoboxing"></a>11.4. Autoboxing</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>In Java gibt es Primitivdatentypen zB int &#8594; int zahl = 3;</p>
+</li>
+<li>
+<p>Es gibt aber auch Objekttypen wie zB Integer</p>
+</li>
+<li>
+<p>Man betrachtet diese Objekttypen als Schachtel (Box), in der die Primitivdatentypen verpackt werden.</p>
+<div class="paragraph">
+<p>zB <strong>Integer zahl = 3;</strong></p>
+</div>
+<div class="paragraph">
+<p>Hier wir nicht nur ein Wert erstellt, sondern ein ganzes Integer-Objekt (mit allen Methoden usw) in der der Wert 3 eingepackt wurde. Dies geschieht automatisch, daher autoboxing</p>
+</div>
+</li>
+<li>
+<p>Früher musste man das händisch durchführen.</p>
+<div class="paragraph">
+<p><span class="line-through">Integer zahl = new Integer(3);</span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Boxing: int &#8594; Integer</p>
+</li>
+<li>
+<p>Unboxing: Integer &#8594; int</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2024-03-05 16:17:05 UTC
+Last updated 2024-05-06 08:55:45 UTC
 </div>
 </div>
 </body>
