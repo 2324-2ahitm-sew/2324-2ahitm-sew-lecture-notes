@@ -362,5 +362,7 @@ Hier wir nicht nur ein Wert erstellt, sondern ein ganzes Integer-Objekt (mit all
 ** Boxing: int -> Integer
 ** Unboxing: Integer -> int
 
+== 2024-05-27 Generics und Collections
+
 
 
