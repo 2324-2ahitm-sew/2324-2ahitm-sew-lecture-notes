@@ -343,9 +343,7 @@ Diese gibt an, wie viel zusätzlichen Speicherplatz der Algorithmus in Abhängig
 
 === Generics
 
-siehe Projekt "GenericsDemo" im lab-Ordner, wo eine Liste implementiert wird.
 
-link:../labs/GenericsDemo[]
 
 === Autoboxing
 
@@ -368,5 +366,7 @@ Hier wir nicht nur ein Wert erstellt, sondern ein ganzes Integer-Objekt (mit all
 
 == 2024-05-27 Generics und Collections
 
+siehe Projekt "GenericsDemo" im lab-Ordner, wo eine Liste implementiert wird.
 
+link:../labs/GenericsDemo[]
 
