@@ -368,5 +368,5 @@ Hier wir nicht nur ein Wert erstellt, sondern ein ganzes Integer-Objekt (mit all
 
 siehe Projekt "GenericsDemo" im lab-Ordner, wo eine Liste implementiert wird.
 
-link:../labs/GenericsDemo[]
+https://github.com/2324-2ahitm-sew/2324-2ahitm-sew-lecture-notes/tree/main/labs/GenericsDemo[GenericsDemo^]
 
