@@ -343,6 +343,10 @@ Diese gibt an, wie viel zusätzlichen Speicherplatz der Algorithmus in Abhängig
 
 === Generics
 
+siehe Projekt "GenericsDemo" im lab-Ordner, wo eine Liste implementiert wird.
+
+link:../labs/GenericsDemo[]
+
 === Autoboxing
 
 * In Java gibt es Primitivdatentypen zB int -> int zahl = 3;
